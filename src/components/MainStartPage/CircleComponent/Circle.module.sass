@@ -1,0 +1,39 @@
+
+.circle
+  border-radius: 50%
+  border: 2px solid #5DB1FF
+
+  display: flex
+  align-items: center
+  justify-content: center
+
+  font-family: 'Raleway', serif
+  font-style: normal
+  font-weight: 700
+  font-size: 15px
+  line-height: 130%
+  color: white
+  text-align: center
+
+  width: 130px
+  height: 130px
+
+  position: relative
+  z-index: 2
+
+
+.circleBlur
+  border-radius: 50%
+  border: 2px solid #5DB1FF
+  position: relative
+
+.circleBlur::before
+  content: ''
+  border: inherit
+  filter: blur(12.5px)
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  z-index: 1
