@@ -8,11 +8,11 @@ const cx = cn.bind(cl)
 
 interface ButtonProps {
     type?: 'AUTH' | 'MAIN' | 'LOGIN';
-    nameButton: string;
+    children: ReactNode
     onClick?: () => void;
 }
 
-export const Button = ({nameButton, type, onClick}: ButtonProps) => {
+export const Button = ({children, type, onClick}: ButtonProps) => {
     return (
         <div onClick={onClick} className={cx(cl.borderBlur, {
             borderOutMain: type == 'MAIN',
@@ -23,7 +23,7 @@ export const Button = ({nameButton, type, onClick}: ButtonProps) => {
                  buttonAuthModal: type == 'AUTH',
                  buttonMain: type == 'MAIN',
              })}>
-                 {nameButton}
+                 {children}
                  {/*<img src={Vector} alt=""/>*/}
                  {/*потом непонятно, как его переиспользовать, т.к здесь изображение*/}
              </button>

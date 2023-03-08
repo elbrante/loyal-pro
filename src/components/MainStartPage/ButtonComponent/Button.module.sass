@@ -1,8 +1,4 @@
 
-.borderBlur
-  border: 2px solid #5DB1FF
-  position: relative
-  border-radius: 100px
 
 .borderBlur::before
   content: ''
@@ -38,6 +34,13 @@
   justify-content: center
   align-items: center
 
+.borderOutMain:hover, .borderOutAuth:hover, .borderOutLogin:hover
+  background: #5DB1FF
+  cursor: pointer
+  transition: 0.6s
+
+.borderOutMain:active, .borderOutAuth:active, .borderOutLogin:active
+  background: #2E9AFF
 
 .borderOutAuth, .borderBlur
   width: 260px

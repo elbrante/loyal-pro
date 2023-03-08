@@ -30,8 +30,13 @@ export const Main = () => {
                     </span>
 
                     <div className={cl.buttonGroupOne}>
-                        <Button onClick={() => setModalAuth(true)} type={'MAIN'} nameButton={'Зарегистрироваться'}/>
-                        <Button onClick={() => setModalLogin(true)} type={'MAIN'} nameButton={'Войти как клиент'}/>
+                        <Button onClick={() => setModalAuth(true)} type={'MAIN'}>
+                            Зарегистрироваться
+                        </Button>
+
+                        <Button onClick={() => setModalLogin(true)} type={'MAIN'}>
+                            Войти как клиент
+                        </Button>
                     </div>
 
                     <div className={cl.businessTypes}>

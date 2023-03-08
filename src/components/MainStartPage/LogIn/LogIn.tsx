@@ -3,6 +3,9 @@ import cl from "../LogIn/LogIn.module.sass";
 import {Input} from "../Input/Input";
 import {Button} from "../ButtonComponent/Button";
 import Modal from 'react-modal'
+import loginIcon from "../../../asserts/loginIcon.svg";
+import passwordIcon from "../../../asserts/passwordIcon.svg";
+
 
 
 
@@ -22,8 +25,17 @@ export const LogIn = ({modalLogin, closeModal}: LoginProps) => {
         >
             <div className={cl.formLog}>
                 <span className={cl.loginText}>Войдите в аккаунт</span>
-                <Input placeholder='Логин'/>
-                <Input placeholder='Пароль' type='password'/>
+
+                {/*В компонентах Auth и Login есть небольшие проблемы с иконками(нужно задать вопрос к куратору)*/}
+                <div className={cl.inputWithImg}>
+                    <img src={loginIcon} alt={'Иконка логина'}/>
+                    <Input placeholder='Логин'/>
+                </div>
+                <div className={cl.inputWithImg}>
+                    <img src={passwordIcon} alt={'Иконка ввода пароля'}/>
+                    <Input type="password" placeholder="Пароль"/>
+                </div>
+
                 <div className={cl.underInput}>
                     <div className={cl.checkBox}>
                         <input type={"checkbox"}/>
@@ -31,7 +43,10 @@ export const LogIn = ({modalLogin, closeModal}: LoginProps) => {
                     </div>
                     <span>Забыли пароль?</span>
                 </div>
-                <Button nameButton={'Войти'} type={'LOGIN'}/>
+
+                <Button type={'LOGIN'}>
+                    Войти
+                </Button>
                 <div className={cl.underButton}>
                     <span className={cl.ask}>Еще нет аккаунта?</span>
                     <span className={cl.offerReg}>Зарегистрируйтесь!</span>

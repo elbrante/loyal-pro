@@ -1,15 +1,16 @@
 import React from 'react';
-import './styles/App.module.sass';
+import  cl from './styles/App.module.sass';
 import {Header} from "./components/Header/Header";
 import {Main} from "./components/MainStartPage/Main";
 
-function App() {
+export const App = () => {
   return (
-    <div>
-        <Header/>
-        <Main/>
+    <div className={cl.App}>
+        <div className={cl.mainApp}>
+            <Header/>
+            <Main/>
+        </div>
     </div>
   );
 }
 
-export default App;
