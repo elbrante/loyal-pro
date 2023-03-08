@@ -7,4 +7,6 @@ CRM-система лояльности для предпринимателей
 2.     react-modal
 3.     react-router
 4.     sass
+5.     axios
+
 
