@@ -6,7 +6,7 @@ export const Header = () => {
     return (
         <header>
             <div className={cl.left}>
-                <img src={logo} alt="" className={cl.imgLogo}/>
+                <img src={logo} alt="Логотип" className={cl.imgLogo} />
                 <span className={cl.leftText}>Организация бизнеса</span>
             </div>
 
