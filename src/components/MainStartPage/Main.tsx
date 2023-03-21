@@ -3,11 +3,9 @@ import cl from "./Main.module.sass"
 import {Button} from "./ButtonComponent/Button";
 import imageMain from "../../asserts/imageMain.png"
 import {Circle} from "./CircleComponent/Circle";
-import imgReg from '../../asserts/imgReg.svg'
-import Modal from "react-modal"
 import {Auth} from "./Auth/Auth";
-import {Input} from "./Input/Input";
 import {LogIn} from "./LogIn/LogIn";
+import {Header} from "./Header/Header";
 
 export const Main = () => {
 
@@ -16,40 +14,44 @@ export const Main = () => {
 
 
     return (
-        <main className={cl.main}>
-            <div className={cl.mainInfo}>
-                <div className={cl.desc}>
+        <div className={cl.mainApp}>
+            <main className={cl.main}>
+                <Header/>
+                <div className={cl.underHeader}>
+                    <div className={cl.mainInfo}>
+                        <div className={cl.desc}>
+                            <span className={cl.descInfoBig}>
+                                Эффективная система для управления бизнесом
+                            </span>
 
-                    <span className={cl.descInfoBig}>
-                        Эффективная система для управления бизнесом
-                    </span>
+                            <span className={cl.descInfoLittle}>
+                                Привлекайте клиентов, увеличивайте прибыль,
+                                и управляйте большими системами
+                            </span>
 
-                    <span className={cl.descInfoLittle}>
-                        Привлекайте клиентов, увеличивайте прибыль,
-                        и управляйте большими системами
-                    </span>
+                            <div className={cl.buttonGroupOne}>
+                                <Button onClick={() => setModalAuth(true)} type={'MAIN'}>
+                                    Зарегистрироваться
+                                </Button>
 
-                    <div className={cl.buttonGroupOne}>
-                        <Button onClick={() => setModalAuth(true)} type={'MAIN'}>
-                            Зарегистрироваться
-                        </Button>
+                                <Button onClick={() => setModalLogin(true)} type={'MAIN'}>
+                                    Войти как клиент
+                                </Button>
+                            </div>
 
-                        <Button onClick={() => setModalLogin(true)} type={'MAIN'}>
-                            Войти как клиент
-                        </Button>
+                            <div className={cl.businessTypes}>
+                                <Circle forWhat={'Для ИП'}/>
+                                <Circle forWhat={'Для малого бизнеса'}/>
+                                <Circle forWhat={'Для крупного бизнеса'}/>
+                            </div>
+                        </div>
                     </div>
-
-                    <div className={cl.businessTypes}>
-                        <Circle forWhat={'Для ИП'}/>
-                        <Circle forWhat={'Для малого бизнеса'}/>
-                        <Circle forWhat={'Для крупного бизнеса'}/>
-                    </div>
+                    <img src={imageMain} alt="" className={cl.imageMain}/>
+                    <Auth modalAuth={modalAuth} closeModal={() => setModalAuth(false)}/>
+                    <LogIn modalLogin={modalLogin} closeModal={() => setModalLogin(false)}/>
                 </div>
-            </div>
-            <img src={imageMain} alt="" className={cl.imageMain}/>
-            <Auth modalAuth={modalAuth} closeModal={() => setModalAuth(false)}/>
-            <LogIn modalLogin={modalLogin} closeModal={() => setModalLogin(false)}/>
-        </main>
+            </main>
+        </div>
     );
 };
 

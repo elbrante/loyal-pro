@@ -1,4 +1,4 @@
-
+@import "src/styles/colors"
 
 .borderBlur::before
   content: ''
@@ -16,7 +16,7 @@
 .borderOutMain, .borderOutAuth, .borderOutLogin
 
   height: 49px
-  border: 2px solid #5DB1FF
+  border: 2px solid $c-blue-5D
   border-radius: 100px
 
   font-family: 'Raleway', serif
@@ -35,12 +35,12 @@
   align-items: center
 
 .borderOutMain:hover, .borderOutAuth:hover, .borderOutLogin:hover
-  background: #5DB1FF
+  background: $c-blue-5D
   cursor: pointer
   transition: 0.6s
 
 .borderOutMain:active, .borderOutAuth:active, .borderOutLogin:active
-  background: #2E9AFF
+  background: $c-blue-2E
 
 .borderOutAuth, .borderBlur
   width: 260px
