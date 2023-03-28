@@ -8,11 +8,18 @@ const cx = cn.bind(cl)
 interface InputProps {
     placeholder: string
     type?: string
+    colorText: 'MAIN' | 'CRM'
 }
 
-export const Input = ({placeholder, type}: InputProps) => {
+export const Input = ({placeholder, type, colorText}: InputProps) => {
     return (
-        <input type={type} className={cl.inputReg} placeholder={placeholder}/>
+        <input type={type}
+               className={cx(cl.inputReg, {
+                   whiteText: colorText === 'MAIN',
+                   blackText: colorText === 'CRM',
+               })}
+               placeholder={placeholder}
+        />
     );
 };
 

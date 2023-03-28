@@ -29,11 +29,11 @@ export const LogIn = ({modalLogin, closeModal}: LoginProps) => {
                 {/*В компонентах Auth и Login есть небольшие проблемы с иконками(нужно задать вопрос к куратору)*/}
                 <div className={cl.inputWithImg}>
                     <img src={loginIcon} alt={'Иконка логина'}/>
-                    <Input placeholder='Логин'/>
+                    <Input colorText='MAIN' placeholder='Логин'/>
                 </div>
                 <div className={cl.inputWithImg}>
                     <img src={passwordIcon} alt={'Иконка ввода пароля'}/>
-                    <Input type="password" placeholder="Пароль"/>
+                    <Input colorText='MAIN' type="password" placeholder="Пароль"/>
                 </div>
 
                 <div className={cl.underInput}>

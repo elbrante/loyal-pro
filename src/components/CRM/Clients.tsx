@@ -1,64 +1,49 @@
-import React from 'react';
+import React, {useState} from 'react';
 import cl from './Clients.module.sass'
+import {ButtonAdd} from "./Button/ButtonAdd";
+import {AddClientModal} from "./AddClientModal/AddClientModal";
+import {ClientTR} from "./ClientTableRow/ClientTR";
+
+
 
 
 export const Clients = () => {
+
+    const [modalClientAdd, setModalClientAdd] = useState(false)
+
     return (
-        <div className={cl.mainCRM}>
-            <div className={cl.mainTable}>
+        <div className={cl.item1}>
+            <div className={cl.item2}>
                 <div className={cl.tableInfo}>
-                    <div className={cl.table}>
-                    <table>
-                        <tr>
+                    <table className={cl.tableMain}>
+                        <thead>
                             <th>ФИО</th>
                             <th>Остаток на балансе</th>
                             <th>Номер карты</th>
-                        </tr>
-                        <tr>
-                            <td>Иванов Иван Иванович</td>
-                            <td>1000</td>
-                            <td>2231 3345 9987 2556</td>
-                        </tr>
-                        <tr>
-                            <td>Петров Петр Алексеевич</td>
-                            <td>1000</td>
-                            <td>2231 3345 9987 2556</td>
-                        </tr>
-                        <tr>
-                            <td>Мерковф Игорь Андреевич</td>
-                            <td>1000</td>
-                            <td>2231 3345 9987 2556</td>
-                        </tr>
-                        <tr>
-                            <td>Мерковф Игорь Андреевич</td>
-                            <td>1000</td>
-                            <td>2231 3345 9987 2556</td>
-                        </tr>
-                        <tr>
-                            <td>Мерковф Игорь Андреевич</td>
-                            <td>1000</td>
-                            <td>2231 3345 9987 2556</td>
-                        </tr>
-                        <tr>
-                            <td>Мерковф Игорь Андреевич</td>
-                            <td>1000</td>
-                            <td>2231 3345 9987 2556</td>
-                        </tr>
-                        <tr>
-                            <td>Мерковф Игорь Андреевич</td>
-                            <td>1000</td>
-                            <td>2231 3345 9987 2556</td>
-                        </tr>
-                        <tr>
-                            <td>Мерковф Игорь Андреевич</td>
-                            <td>1000</td>
-                            <td>2231 3345 9987 2556</td>
-                        </tr>
+                        </thead>
+                        {/*здесь нужно делать запрос к бд, чтобы получить name, points, numberCard*/}
+                        <ClientTR name={'Иванов Иван Иванович'} points={1000} numberCard={2231334599872556}/>
+                        <ClientTR name={'Иванов Иван Иванович'} points={1000} numberCard={2231334599872556}/>
+                        <ClientTR name={'Иванов Иван Иванович'} points={1000} numberCard={2231334599872556}/>
+                        <ClientTR name={'Иванов Иван Иванович'} points={1000} numberCard={2231334599872556}/>
+                        <ClientTR name={'Иванов Иван Иванович'} points={1000} numberCard={2231334599872556}/>
+                        <ClientTR name={'Иванов Иван Иванович'} points={1000} numberCard={2231334599872556}/>
+                        <ClientTR name={'Иванов Иван Иванович'} points={1000} numberCard={2231334599872556}/>
+                        <ClientTR name={'Иванов Иван Иванович'} points={1000} numberCard={2231334599872556}/>
+                        <ClientTR name={'Иванов Иван Иванович'} points={1000} numberCard={2231334599872556}/>
+                        <ClientTR name={'Иванов Иван Иванович'} points={1000} numberCard={2231334599872556}/>
+                        <ClientTR name={'Иванов Иван Иванович'} points={1000} numberCard={2231334599872556}/>
+                        <ClientTR name={'Иванов Иван Иванович'} points={1000} numberCard={2231334599872556}/>
+                        <ClientTR name={'Иванов Иван Иванович'} points={1000} numberCard={2231334599872556}/>
                     </table>
-                    </div>
                 </div>
+                <ButtonAdd width={358} onClick={() => setModalClientAdd(true)}>Добавить пользователя</ButtonAdd>
+                <AddClientModal modalClientAdd={modalClientAdd} closeModal={() => setModalClientAdd(false)}/>
             </div>
+
+
         </div>
     );
 };
+
 
