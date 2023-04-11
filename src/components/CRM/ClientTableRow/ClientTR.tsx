@@ -20,13 +20,14 @@ export const ClientTR = ({name, points, numberCard}: Props) => {
             <td>{name}</td>
             <td>{points}</td>
             <td>{numberCard}</td>
-            <ClientModal clientModal={clientModal}
-                         closeModal={() => setClientModal(false)}
-                         name={name}
-                         gender={'мужской'}
-                         points={points}
-                         phone={88888888888}
-                         instLink={'inst'}
+            <ClientModal
+                clientModal={clientModal}
+                closeModal={() => setClientModal(false)}
+                name={name}
+                gender={'мужской'}
+                points={points}
+                phone={88888888888}
+                instLink={'inst'}
             />
         </tr>
     );

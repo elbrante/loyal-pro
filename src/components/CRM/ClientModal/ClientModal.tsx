@@ -59,8 +59,6 @@ export const ClientModal = ({clientModal, closeModal, name, gender, points, phon
                     <ButtonAdd width={245}>Добавить</ButtonAdd>
                 </div>
             </div>
-
-
         </Modal>
     );
 };

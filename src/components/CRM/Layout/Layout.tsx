@@ -8,7 +8,11 @@ export const Layout = () => {
         <div className={cl.mainBlock}>
             <HeaderCRM/>
             <main className={cl.mainWrapper}>
-                <Outlet/>
+                <div className={cl.item1}>
+                    <div className={cl.item2}>
+                        <Outlet/>
+                    </div>
+                </div>
             </main>
         </div>
     );

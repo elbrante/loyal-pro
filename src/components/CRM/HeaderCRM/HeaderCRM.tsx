@@ -20,19 +20,19 @@ export const HeaderCRM = () => {
                     Клиенты
                 </NavLink>
                 <NavLink
-                    to={'/'}
+                    to={'operations'}
                     className={({isActive}) => cx(cl.link, isActive && cl.linkActive)}>
                     <img src={operations} alt={'Операции'}/>
                     Операции
                 </NavLink>
                 <NavLink
-                    to={'/'}
+                    to={'stat'}
                     className={({isActive}) => cx(cl.link, isActive && cl.linkActive)}>
                     <img src={stat} alt={'Статистика'}/>
                     Статистика
                 </NavLink>
                 <NavLink
-                    to={'/'}
+                    to={'sources'}
                     className={({isActive}) => cx(cl.link, isActive && cl.linkActive)}>
                     <img src={ist} alt={'Источники'}/>
                     Источники
