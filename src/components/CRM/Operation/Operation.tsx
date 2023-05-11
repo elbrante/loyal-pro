@@ -5,7 +5,6 @@ import {OperationTR} from "../OperationTableRow/OperationTR";
 
 export const Operation = () => {
     return (
-        <div>
             <div className={cl.wrapper1}>
                 <table className={cl.tableMain}>
                     <thead>
@@ -76,7 +75,6 @@ export const Operation = () => {
                 </table>
             </div>
 
-        </div>
     );
 };
 

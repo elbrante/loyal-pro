@@ -16,25 +16,25 @@ export const HeaderCRM = () => {
                 <NavLink
                     to={'clients'}
                     className={({isActive}) => cx(cl.link, isActive && cl.linkActive)}>
-                    <img src={clients} alt={'Клиенты'}/>
+                    <img className={cl.imageNav} src={clients} alt={'Клиенты'}/>
                     Клиенты
                 </NavLink>
                 <NavLink
                     to={'operations'}
                     className={({isActive}) => cx(cl.link, isActive && cl.linkActive)}>
-                    <img src={operations} alt={'Операции'}/>
+                    <img className={cl.imageNav} src={operations} alt={'Операции'}/>
                     Операции
                 </NavLink>
                 <NavLink
                     to={'stat'}
                     className={({isActive}) => cx(cl.link, isActive && cl.linkActive)}>
-                    <img src={stat} alt={'Статистика'}/>
+                    <img className={cl.imageNav} src={stat} alt={'Статистика'}/>
                     Статистика
                 </NavLink>
                 <NavLink
                     to={'sources'}
                     className={({isActive}) => cx(cl.link, isActive && cl.linkActive)}>
-                    <img src={ist} alt={'Источники'}/>
+                    <img className={cl.imageNav} src={ist} alt={'Источники'}/>
                     Источники
                 </NavLink>
             </nav>

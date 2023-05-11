@@ -6,12 +6,14 @@
 
 
 .main
-  min-height: 100vh
+  width: 80%
   display: flex
   gap: 10px
-  justify-content: center
   background: black
   flex-direction: column
+
+  @media screen and (width <= 1300px)
+    width: 50%
 
 
 .underHeader
@@ -36,7 +38,7 @@
   font-size: 45px
   line-height: 130%
   color: white
-  width: 505px
+
 
 .descInfoLittle
   font-family: 'Raleway', serif
@@ -45,13 +47,17 @@
   font-size: 20px
   line-height: 130%
   color: #E5E5E5
-  width: 442px
+
 
 
 .buttonGroupOne
   display: flex
   gap: 40px
   padding-top: 40px
+
+  @media screen and (width <= 1200px)
+    flex-direction: column
+    align-items: center
 
 
 .businessTypes
@@ -60,11 +66,18 @@
   margin-top: 50px
   margin-bottom: 50px
 
+  @media screen and (width <= 1200px)
+    flex-direction: column
+    align-items: center
+
 
 .imageMain
   width: 543px
   height: 658px
   margin-top: 30px
+
+  @media screen and (width <= 1300px)
+    display: none
 
 
 

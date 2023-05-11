@@ -6,10 +6,17 @@
   display: flex
   flex-direction: column
   justify-content: center
+  @media screen and (width <= 1000px)
+    flex-direction: row
+    height: 100px
+
 
 .navLinkLeft
   display: flex
   flex-direction: column
+  @media screen and (width <= 1000px)
+    flex-direction: row
+
 
 
 .link
@@ -20,6 +27,8 @@
   justify-content: center
   align-items: center
   gap: 15px
+  @media screen and (width <= 1000px)
+    width: 200px
 
   font-family: 'Raleway', serif
   font-size: 30px
@@ -30,3 +39,6 @@
 .linkActive
   background-color: $c-blue-E1
 
+.imageNav
+  @media screen and (width <= 1000px)
+    display: none

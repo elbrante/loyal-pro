@@ -23,7 +23,6 @@ export const Auth = ({modalAuth, closeModal}: AuthProps) => {
             <div className={cl.formReg}>
                 <span>Зарегистрируйтесь</span>
 
-                {/*В компонентах Auth и Login есть небольшие проблемы с иконками(нужно задать вопрос к куратору)*/}
                 <div className={cl.inputWithImg}>
                     <img src={loginIcon} alt={'Иконка логина'}/>
                     <Input colorText='MAIN' placeholder='Логин'/>
