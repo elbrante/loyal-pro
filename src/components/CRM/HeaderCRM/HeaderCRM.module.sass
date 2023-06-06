@@ -1,0 +1,44 @@
+@import "src/styles/colors"
+.header
+  width: 308px
+  height: 100vh
+  background-color: white
+  display: flex
+  flex-direction: column
+  justify-content: center
+  @media screen and (width <= 1000px)
+    flex-direction: row
+    height: 100px
+
+
+.navLinkLeft
+  display: flex
+  flex-direction: column
+  @media screen and (width <= 1000px)
+    flex-direction: row
+
+
+
+.link
+  width: 308px
+  height: 59px
+  padding: 10px 70px
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 15px
+  @media screen and (width <= 1000px)
+    width: 200px
+
+  font-family: 'Raleway', serif
+  font-size: 30px
+  line-height: 130%
+  color: $c-black-25
+
+
+.linkActive
+  background-color: $c-blue-E1
+
+.imageNav
+  @media screen and (width <= 1000px)
+    display: none

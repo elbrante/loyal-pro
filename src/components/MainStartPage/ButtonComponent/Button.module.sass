@@ -1,0 +1,50 @@
+@import "src/styles/colors"
+
+.borderBlur::before
+  content: ''
+  height: 55px
+  border: inherit
+  filter: blur(12.5px)
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  z-index: 1
+
+
+.borderOutMain, .borderOutAuth, .borderOutLogin
+
+  height: 49px
+  border: 2px solid $c-blue-5D
+  border-radius: 100px
+
+  font-family: 'Raleway', serif
+  font-style: normal
+  font-weight: 700
+  font-size: 20px
+  line-height: 130%
+  text-align: center
+  color: white
+
+  position: relative
+  z-index: 2
+
+  display: flex
+  justify-content: center
+  align-items: center
+
+.borderOutMain:hover, .borderOutAuth:hover, .borderOutLogin:hover
+  background: $c-blue-5D
+  cursor: pointer
+  transition: 0.6s
+
+.borderOutMain:active, .borderOutAuth:active, .borderOutLogin:active
+  background: $c-blue-2E
+
+.borderOutAuth, .borderBlur
+  width: 260px
+
+.borderOutAuth, .buttonAuthModal
+  width: 420px
+
