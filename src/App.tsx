@@ -1,11 +1,11 @@
 import React from 'react';
-import {Main} from "./components/MainStartPage/Main";
+import {Main} from "./pages/MainStartPage/Main";
 import {Routes, Route} from "react-router-dom";
-import {Clients} from "./components/CRM/Clients";
-import {Layout} from "./components/CRM/Layout/Layout";
-import {Operation} from "./components/CRM/Operation/Operation";
-import {Stat} from "./components/CRM/Stat/Stat";
-import {Sources} from "./components/CRM/Sources/Sources";
+import {Clients} from "./pages/Clients/Clients";
+import {Layout} from "./components/Layout/Layout";
+import {Operation} from "./pages/Operation/Operation";
+import {Stat} from "./pages/Stat/Stat";
+import {Sources} from "./pages/Sources/Sources";
 
 export const App = () => {
   return (
