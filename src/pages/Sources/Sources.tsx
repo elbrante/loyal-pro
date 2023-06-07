@@ -1,5 +1,6 @@
 import React from 'react';
 import cl from './Sources.module.sass'
+import {SourceTableRow} from "../../components/SourceTableRow/SourseTableRow";
 
 export const Sources = () => {
     return (
@@ -11,6 +12,19 @@ export const Sources = () => {
                     <th>Источник</th>
                     <th>Ссылка</th>
                 </thead>
+                <SourceTableRow desc={'link'} dataCreate={'01.01.2023'} source={'google'} link={'google.com'}/>
+                <SourceTableRow desc={'link'} dataCreate={'01.01.2023'} source={'google'} link={'google.com'}/>
+                <SourceTableRow desc={'link'} dataCreate={'01.01.2023'} source={'google'} link={'google.com'}/>
+                <SourceTableRow desc={'link'} dataCreate={'01.01.2023'} source={'google'} link={'google.com'}/>
+                <SourceTableRow desc={'link'} dataCreate={'01.01.2023'} source={'google'} link={'google.com'}/>
+                <SourceTableRow desc={'link'} dataCreate={'01.01.2023'} source={'google'} link={'google.com'}/>
+                <SourceTableRow desc={'link'} dataCreate={'01.01.2023'} source={'google'} link={'google.com'}/>
+                <SourceTableRow desc={'link'} dataCreate={'01.01.2023'} source={'google'} link={'google.com'}/>
+                <SourceTableRow desc={'link'} dataCreate={'01.01.2023'} source={'google'} link={'google.com'}/>
+                <SourceTableRow desc={'link'} dataCreate={'01.01.2023'} source={'google'} link={'google.com'}/>
+                <SourceTableRow desc={'link'} dataCreate={'01.01.2023'} source={'google'} link={'google.com'}/>
+                <SourceTableRow desc={'link'} dataCreate={'01.01.2023'} source={'google'} link={'google.com'}/>
+                <SourceTableRow desc={'link'} dataCreate={'01.01.2023'} source={'google'} link={'google.com'}/>
             </table>
         </div>
     );
