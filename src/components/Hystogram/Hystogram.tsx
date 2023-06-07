@@ -23,7 +23,7 @@ export const Histogram = () => {
 							labels: ['0-18', '18-24', '25-31', '32-38', '39-45', '46-52', '53+'],
 							datasets: [
 								{
-									label: 'Возраст',
+									label: 'Количество',
 									data: [10, 15, 20, 18, 25, 12, 8],
 									backgroundColor: 'rgba(75, 192, 192, 0.6)',
 								},
