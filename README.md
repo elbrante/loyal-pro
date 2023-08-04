@@ -1,12 +1,13 @@
 # Loyal PRO CRM
 
-CRM-система лояльности для предпринимателей
+CRM-система лояльности для предпринимателей(проект по учебной практике)  
 
-## Установленные библиотеки
-1.     classnames
-2.     react-modal
-3.     react-router-dom
-4.     sass
-5.     axios
+Используемые технологии:
+1. JS,TS
+2. Sass,HTML
+3. Classnames 
+4. React-modal
+5. React,React-router
+6. Axios
 
 
