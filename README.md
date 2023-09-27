@@ -10,6 +10,6 @@ CRM-система лояльности для предпринимателей(
 5. React,React-router
 6. Axios
 
-
+Ссылка на макет: https://www.figma.com/file/pMSqjY6aSywFxnwFXHtBKO/Проект-CRM-(Copy)?type=design&node-id=0-1&mode=design&t=hizKg8vsZMhwIPHd-0
 
 
